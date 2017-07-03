@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6A82A2F-BDBC-4F06-8A9E-52E202FA3D55}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Геометричні_Перетворення.My.MyApplication</StartupObject>
+    <RootNamespace>Геометричні_Перетворення</RootNamespace>
+    <AssemblyName>Геометричні Перетворення</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Геометричні Перетворення.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Геометричні Перетворення.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="igraG.Designer.vb">
+      <DependentUpon>igraG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="igraG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="igraP.Designer.vb">
+      <DependentUpon>igraP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="igraP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IgraPP.Designer.vb">
+      <DependentUpon>IgraPP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IgraPP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="igraS.Designer.vb">
+      <DependentUpon>igraS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="igraS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainvb.Designer.vb">
+      <DependentUpon>mainvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mes.Designer.vb">
+      <DependentUpon>mes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="practPP.Designer.vb">
+      <DependentUpon>practPP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="practPP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="theory.Designer.vb">
+      <DependentUpon>theory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="theory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zG.Designer.vb">
+      <DependentUpon>zG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zP.Designer.vb">
+      <DependentUpon>zP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zPP.Designer.vb">
+      <DependentUpon>zPP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zPP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zS.Designer.vb">
+      <DependentUpon>zS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="zS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Гомотетия.Designer.vb">
+      <DependentUpon>Гомотетия.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Гомотетия.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practCS.Designer.vb">
+      <DependentUpon>practCS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="practCS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Копия 3 из practCS.Designer.vb">
+      <DependentUpon>Копия 3 из practCS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Копия 3 из practCS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Копия 4 из practCS.Designer.vb">
+      <DependentUpon>Копия 4 из practCS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Копия 4 из practCS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Копия practCS.Designer.vb">
+      <DependentUpon>Копия practCS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Копия practCS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Перенесення.Designer.vb">
+      <DependentUpon>Перенесення.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Перенесення.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Поворот.Designer.vb">
+      <DependentUpon>Поворот.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Поворот.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Симетрия.Designer.vb">
+      <DependentUpon>Симетрия.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Симетрия.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igraG.resx">
+      <DependentUpon>igraG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igraP.resx">
+      <DependentUpon>igraP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IgraPP.resx">
+      <DependentUpon>IgraPP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="igraS.resx">
+      <DependentUpon>igraS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainvb.resx">
+      <DependentUpon>mainvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mes.resx">
+      <DependentUpon>mes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="practPP.resx">
+      <DependentUpon>practPP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="theory.resx">
+      <DependentUpon>theory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zG.resx">
+      <DependentUpon>zG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zP.resx">
+      <DependentUpon>zP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zPP.resx">
+      <DependentUpon>zPP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zS.resx">
+      <DependentUpon>zS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Гомотетия.resx">
+      <DependentUpon>Гомотетия.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="practCS.resx">
+      <DependentUpon>practCS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Копия 3 из practCS.resx">
+      <DependentUpon>Копия 3 из practCS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Копия 4 из practCS.resx">
+      <DependentUpon>Копия 4 из practCS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Копия practCS.resx">
+      <DependentUpon>Копия practCS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Перенесення.resx">
+      <DependentUpon>Перенесення.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Поворот.resx">
+      <DependentUpon>Поворот.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Симетрия.resx">
+      <DependentUpon>Симетрия.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
